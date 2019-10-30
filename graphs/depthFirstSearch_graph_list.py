@@ -16,6 +16,7 @@ for i in range(N):
 g = Graph()
 data = g.ret()
 
+#visits all the connected nodes connected to the node.
 def DFSUntill(node,visited,data,ans):
     visited[node] = 1
     ans.append(node)
@@ -23,6 +24,7 @@ def DFSUntill(node,visited,data,ans):
         if visited[i]==0:
             DFSUntill(i,visited,data,ans)
 
+#Depthfirst Search in Graph
 def DFS(node,data):
     visited = [0]*(len(data)+1)
     ans = []
