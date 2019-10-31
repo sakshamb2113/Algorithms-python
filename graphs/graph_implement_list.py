@@ -1,10 +1,8 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Sep 28 14:24:50 2019
+import numpy as np
 
-@author: saransh
-"""
+'''
+    list implementation of graph
+'''
 
 class Vertex:
     def __init__(self,n):
@@ -46,22 +44,5 @@ class Graph:
     def ret(self):
         return self.vertices
             
-'''g = Graph()
-#print(str(len(g.vertices)))
-a = Vertex('A')
-g.add_vertex(a)
-l = ['A','B','C','D','E','F','G','H','I','J']
-g.add_vertex(Vertex('B'))
-#for i in l:
-#	g.add_vertex(Vertex(i))
 
-g.add_vertices_from_list(l)
-edges = ['AB', 'AE', 'BF', 'CG', 'DE', 'DH', 'EH', 'FG', 'FI', 'FJ', 'GJ', 'HI']
-for edge in edges:
-	g.add_edge(edge[0], edge[1])
-'''
-#g.print_graph()
-#g = Graph()
-#data = g.ret()
-#print(len(data))
 
